@@ -41,8 +41,7 @@ If you're curious how far one careful person can push this, that's the whole exp
 
 I'm building Reticle and everything above independently, without a company behind it. Sponsorship is what turns this from nights-and-weekends pace into sustained, full-time open-source engineering.
 
-Concretely, sponsorship buys: new Reticle capabilities, performance work, documentation, testing and benchmarking infrastructure, and long-term maintenance. It also buys the thing I most want to publish more of: the campaign plans, loop designs, and verification tooling themselves, so other builders can run this method too.
-
+Concretely, sponsorship buys: new Reticle capabilities, performance work, documentation, testing and benchmarking infrastructure, and long-term maintenance. 
 [![Sponsor AlpharomeroJL](https://img.shields.io/badge/Sponsor-AlpharomeroJL-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/AlpharomeroJL)
 
 Even small monthly sponsorships genuinely matter for a solo builder. Thank you.
