@@ -39,7 +39,7 @@ If you're curious how far one careful person can push this, that's the whole exp
 
 ## ❤️ Sponsor this work
 
-I'm building Reticle and everything above independently, without a company behind it. Sponsorship is what turns this from nights-and-weekends pace into sustained, full-time open-source engineering.
+I'm building Reticle and everything above independently, without a company behind it.
 
 Concretely, sponsorship buys: new Reticle capabilities, performance work, documentation, testing and benchmarking infrastructure, and long-term maintenance. 
 [![Sponsor AlpharomeroJL](https://img.shields.io/badge/Sponsor-AlpharomeroJL-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/AlpharomeroJL)
