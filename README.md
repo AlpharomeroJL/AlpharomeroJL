@@ -12,7 +12,7 @@ Everything here is dated and tied to commits you can click. I'd rather show you 
 
 | Project | What it is | Status |
 | ------- | ---------- | ------ |
-| **[Reticle](https://github.com/AlpharomeroJL/reticle)** | Browser-native, GPU-accelerated IC layout platform in Rust/WASM. Layout, geometry, DRC, verification, and AI-assisted workflows, designed as a modular platform rather than a single editor. Built in multi-wave autonomous campaigns with benchmark regression gates between waves. [Live demo](https://alpharomerojl.github.io/reticle/). | v8 in active development |
+| **[Reticle](https://github.com/AlpharomeroJL/reticle)** | Browser-native, GPU-accelerated IC layout platform in Rust/WASM. Layout, geometry, DRC, verification, and AI-assisted workflows, designed as a modular platform rather than a single editor. Built in multi-wave autonomous campaigns with benchmark regression gates between waves. [Live demo](https://alpharomerojl.github.io/reticle/). | v9.1 in active development |
 | **[VaultScribe](https://vaultscribe.app)** | Fully offline meeting transcription for desktop (Tauri + local Whisper). Your audio never leaves your machine. | Release candidate |
 | **[InvariantEval](https://github.com/AlpharomeroJL/invarianteval)** | Safety-invariant eval gates for agentic pipelines. The verification layer from my own loops, pulled out and published, because the guarantees have to hold no matter which model is executing. | v1, public |
 | **[Speakspec](https://github.com/AlpharomeroJL/speakspec)** | Talk through a system design out loud, get a structured architecture spec back. Built because scoping is most of my job and I wanted it faster. | v1.0.0, public |
