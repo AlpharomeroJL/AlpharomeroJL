@@ -1,51 +1,62 @@
 # Hi, I'm Josef 👋
 
-I'm a software engineer in Austin, Texas. My discipline is **agentic engineering**: designing the loops, verification systems, and execution plans that let AI coding agents build serious software without the quality collapsing. The agents are swappable. The engineering is the part that holds.
+**Systems architecture | Autonomous engineering research | Applied AI | Rust | Hardware and software systems**
 
-Right now most of that energy goes into **[Reticle](https://github.com/AlpharomeroJL/reticle)**: a modern semiconductor CAD platform in Rust, GPU-accelerated, running in your browser. Chip design tooling is expensive, ancient, and locked down, and I think the layout editor of the next decade should be open, fast, and a URL away. So I'm building it.
+I'm a systems architect, independent researcher, and technical founder based in Austin, Texas. I've been programming since 2014, starting with software, security experimentation, reverse engineering, networking, and electronics. I still like understanding systems all the way down to the hardware.
 
-Everything here is dated and tied to commits you can click. I'd rather show you the build log than tell you about it.
+Alongside software, I spent five years working on commercial building infrastructure, from pulling cable and wiring high-rise installations to network programming, integration, advanced diagnostics, commissioning, and field repairs. That experience shaped how I build: understand the whole system, verify the work, and account for what happens outside a development environment.
 
----
+Today my work spans autonomous software engineering, local-first AI infrastructure, distributed systems, and engineering tools. Some of it is open source. Much of the current research and commercial implementation is private.
 
-## 🚩 What I'm building
+## What I'm focused on
 
-| Project | What it is | Status |
-| ------- | ---------- | ------ |
-| **[Reticle](https://github.com/AlpharomeroJL/reticle)** | Browser-native, GPU-accelerated IC layout platform in Rust/WASM. Layout, geometry, DRC, verification, and AI-assisted workflows, designed as a modular platform rather than a single editor. Built in multi-wave autonomous campaigns with benchmark regression gates between waves. [Live demo](https://alpharomerojl.github.io/reticle/). | v9.1 in active development |
-| **[VaultScribe](https://vaultscribe.app)** | Fully offline meeting transcription for desktop (Tauri + local Whisper). Your audio never leaves your machine. | Release candidate |
-| **[InvariantEval](https://github.com/AlpharomeroJL/invarianteval)** | Safety-invariant eval gates for agentic pipelines. The verification layer from my own loops, pulled out and published, because the guarantees have to hold no matter which model is executing. | v1, public |
-| **[Speakspec](https://github.com/AlpharomeroJL/speakspec)** | Talk through a system design out loud, get a structured architecture spec back. Built because scoping is most of my job and I wanted it faster. | v1.0.0, public |
-| **[Crypto-Anaylzer](https://github.com/AlpharomeroJL/Crypto-Anaylzer)** | My earliest public repo. Yes, the typo is permanent. It's a timestamp at this point. | Archive |
+### Adjoint Hypergraph Rewriting Loop (AHRL) | Independent research
 
----
+AHRL is my compiler-inspired approach to autonomous software engineering. Instead of relying on models to plan, generate, and judge their own work in an open-ended loop, it represents requirements, engineering state, dependencies, and provenance explicitly. Work is coordinated through bounded rewrites, deterministic verification, and backward-chained fault localization and repair.
 
-## 🔁 Agentic engineering, the way I practice it
+I wrote a **59-page research manuscript in August 2026** documenting the original architecture, mathematical foundations, and early experiments. The proprietary implementation has since developed far beyond that initial paper. The manuscript is independent research, not a peer-reviewed publication.
 
-The interesting problem in AI-assisted development isn't prompting. It's everything around the model: how work gets scoped, dispatched, verified, and merged so that one person can run what amounts to a build organization. I've run these loops on Claude Code, on my own Python orchestrator driving local models on my own hardware, and the method transfers because it was never about the harness.
+**My focus is the engineering around the model: state, contracts, execution, verification, and recovery. Models are replaceable. Those guarantees should not be.**
 
-What a campaign actually looks like before a single line of code is written:
+### [VaultScribe™](https://vaultscribe.app/) | Private AI infrastructure for law firms
 
-- **Grounding.** Every premise in the plan is checked against the repo at a specific commit. Anything that can't be verified yet becomes an explicit placeholder that blocks execution until it's resolved. Plans don't run on assumptions.
-- **Contracts.** Cross-lane interfaces are frozen up front as schemas with byte-level fixtures and cross-tests on both sides, so a dozen parallel work lanes can't drift against each other.
-- **Gates.** Tests, benchmarks, and invariant checks run between every wave. If the numbers regress, the wave doesn't land. Baselines only move at gates.
-- **Honest accounting.** Model tiers are assigned per task and calibrated against measured results. Quota throttling drains into a standing queue of unattended work instead of stalling the campaign. Every claim in the docs has to trace to a committed record.
+I'm building a Rust-based, local-first AI workspace for legal professionals, designed around customer-controlled infrastructure and data boundaries.
 
-My CI fails the build if the README contains marketing adjectives. "Blazing," "seamless," and "world-class" are literally banned strings. The execution plan for a single Reticle release runs longer than most projects' entire documentation, and I think that ratio is roughly correct.
+The platform brings together on-device transcription without meeting bots, source-linked retrieval, matter-level knowledge, document workflows, and agent-assisted drafting. The architecture emphasizes isolation, auditable outbound integrations, and policy-controlled access.
 
-If you're curious how far one careful person can push this, that's the whole experiment. You're watching it.
+**Status:** Active commercial development. The core implementation is private.
 
----
+### [Reticle](https://github.com/AlpharomeroJL/reticle) | Integrated circuit layout and EDA
 
-## ❤️ Sponsor this work
+A Rust and WebAssembly engineering platform with native and browser targets, GPU-accelerated rendering, hierarchical IC layout, out-of-core streaming, design-rule checking, routing, extraction, and agent-assisted verification.
 
-I'm building Reticle and everything above independently, without a company behind it.
+The [public repository](https://github.com/AlpharomeroJL/reticle) and [browser demo](https://alpharomerojl.github.io/reticle/) show part of that work. The public build is experimental and has known limitations; a more advanced implementation remains private. Reticle is still in development, currently at a lower priority than my other work.
 
-Concretely, sponsorship buys: new Reticle capabilities, performance work, documentation, testing and benchmarking infrastructure, and long-term maintenance. 
-[![Sponsor AlpharomeroJL](https://img.shields.io/badge/Sponsor-AlpharomeroJL-ea4aaa?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/AlpharomeroJL)
+## Public repositories
 
-Even small monthly sponsorships genuinely matter for a solo builder. Thank you.
+| Project | What it demonstrates |
+| --- | --- |
+| [Reticle](https://github.com/AlpharomeroJL/reticle) | Rust/WASM, GPU rendering, computational geometry, EDA, streaming, and verification. [Try the demo](https://alpharomerojl.github.io/reticle/). |
+| [InvariantEval](https://github.com/AlpharomeroJL/invarianteval) | Deterministic safety-invariant gates and provenance checks for structured AI workflows, with local evaluation and MCP integration. |
+| [Speakspec](https://github.com/AlpharomeroJL/speakspec) | Local voice-to-architecture tooling that generates specifications, agent context, decision records, and validated diagrams. |
+| [Crypto-Anaylzer](https://github.com/AlpharomeroJL/Crypto-Anaylzer) | Reproducible quantitative research infrastructure with deterministic identities, lineage, and fail-closed promotion gates. An earlier project, typo and all. |
 
----
+## How I approach engineering
 
-📫 josefdean@pm.me · Austin, TX
+- **Ground the work.** Requirements, constraints, and assumptions should be explicit and tied to actual system state.
+- **Separate execution from judgment.** Model output is a proposal, not proof that a system works.
+- **Make integration verifiable.** Define interfaces and test both sides before dependent work is merged.
+- **Localize failures.** Trace defects to the decisions and dependencies that caused them, rather than blindly regenerating artifacts.
+- **Preserve evidence.** Benchmarks, regression tests, reproducible experiments, and honest limitations matter more than impressive descriptions.
+
+I've worked across product strategy, customer discovery, hands-on engineering, and business ownership. I like problems that connect physical systems, software architecture, and real operational constraints.
+
+Earlier work also includes **Pi-box**, a self-hosted conversational agent and remote execution platform using a Raspberry Pi control plane and GPU worker nodes. I discontinued that standalone project as commercial agents gained similar remote-control capabilities.
+
+## Connect
+
+- [LinkedIn](https://www.linkedin.com/in/joseflong/)
+- [VaultScribe™](https://vaultscribe.app/)
+- [Email](mailto:josefdean@pm.me)
+
+If you find the public engineering work useful, [GitHub sponsorship](https://github.com/sponsors/AlpharomeroJL) helps support its development, testing, documentation, and maintenance.
