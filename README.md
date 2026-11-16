@@ -40,10 +40,26 @@ A Rust and WebAssembly engineering platform with native and browser targets, GPU
 
 The [public repository](https://github.com/AlpharomeroJL/reticle) and [browser demo](https://alpharomerojl.github.io/reticle/) show part of that work. The public build is experimental and has known limitations; a more advanced implementation remains private. Reticle is still in development, currently at a lower priority than my other work.
 
+### [Atlas](https://github.com/Avarok-Cybersecurity/atlas) | Rust/CUDA inference on NVIDIA Ada
+
+Contributed and merged Ada Lovelace (sm_89) support into Atlas, bringing the Rust inference engine from NVIDIA GB10 to consumer RTX GPUs.
+
+On an RTX 4060 Ti 16 GB running Qwen3.5-4B, the work delivered **4.6× faster BF16 prefill** (794 → 3,684 tok/s), with an experimental int4 and speculative decoding configuration reaching **381 aggregate tok/s across eight concurrent requests** and **98 tok/s single-stream**.
+
+The port includes CUDA kernel adaptations, VRAM budgeting, low-bit execution, and speculative decoding. The int4 results are opt-in and have not been established as quality-equivalent to BF16.
+
+### [pqbind](https://github.com/AlpharomeroJL/pqbind) | Hybrid post-quantum authentication
+
+A Rust library combining Ed25519 and ML-DSA-87 signatures with TLS exporter-based channel binding for TLS 1.3 and QUIC.
+
+Designed to add hybrid authentication to existing secure transports without replacing their handshakes. Includes protocol documentation, a threat model, and integration examples.
+
 ## Public repositories
 
 | Project | What it demonstrates |
 | --- | --- |
+| [Atlas](https://github.com/Avarok-Cybersecurity/atlas) | Merged Rust/CUDA contribution bringing Atlas to NVIDIA Ada Lovelace GPUs; 4.6× BF16 prefill improvement and experimental 381 tok/s eight-stream throughput on an RTX 4060 Ti 16 GB. |
+| [pqbind](https://github.com/AlpharomeroJL/pqbind) | Hybrid Ed25519 + ML-DSA-87 authentication with TLS exporter channel binding for QUIC/TLS 1.3. |
 | [Reticle](https://github.com/AlpharomeroJL/reticle) | Rust/WASM, GPU rendering, computational geometry, EDA, streaming, and verification. [Try the demo](https://alpharomerojl.github.io/reticle/). |
 | [InvariantEval](https://github.com/AlpharomeroJL/invarianteval) | Deterministic safety-invariant gates and provenance checks for structured AI workflows, with local evaluation and MCP integration. |
 | [Speakspec](https://github.com/AlpharomeroJL/speakspec) | Local voice-to-architecture tooling that generates specifications, agent context, decision records, and validated diagrams. |
