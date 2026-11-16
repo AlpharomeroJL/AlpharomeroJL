@@ -1,6 +1,6 @@
 # Hi, I'm Josef 👋
 
-**Systems architecture | Autonomous engineering research | Applied AI | Rust | Hardware and software systems**
+**Systems Architecture | Rust & CUDA | GPU Inference | Cryptography | Autonomous Engineering**
 
 I'm a systems architect, independent researcher, and technical founder based in Austin, Texas. I've been programming since 2014, starting with software, security experimentation, reverse engineering, networking, and electronics. I still like understanding systems all the way down to the hardware.
 
